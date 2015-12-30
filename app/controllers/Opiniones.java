@@ -147,7 +147,7 @@ public class Opiniones extends Controller{
 			suma += opinionMedia.getPuntuacion();
 			contador++;
 		}
-		Double media = Double.parseDouble(Float.toString(suma/contador));
+		Float media = Float.parseFloat(Float.toString(suma/contador));
 		api.setPuntuacionMedia(media);
 		api.save();
 		
@@ -211,7 +211,7 @@ public class Opiniones extends Controller{
 			suma += opinionMedia.getPuntuacion();
 			contador++;
 		}
-		Double media = Double.parseDouble(Float.toString(suma/contador));
+		Float media = Float.parseFloat(Float.toString(suma/contador));
 		api.setPuntuacionMedia(media);
 		api.save();
 		
