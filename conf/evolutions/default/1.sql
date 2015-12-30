@@ -10,7 +10,7 @@ create table api (
   url                           varchar(255),
   gratis                        boolean,
   precio_mes                    integer,
-  puntuacion_media              double,
+  puntuacion_media              float,
   xml                           boolean,
   json                          boolean,
   html                          boolean,
