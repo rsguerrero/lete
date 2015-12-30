@@ -42,7 +42,7 @@ public class Api extends ApiModeloBase {
 	@Min(value = 0,message="error.precioMes.min")
 	private Integer precioMes;
 	
-	private Double puntuacionMedia;
+	private Float puntuacionMedia;
 	
 	@Required(message="error.obligatorio.xml")
 	private boolean xml;
@@ -161,11 +161,11 @@ public class Api extends ApiModeloBase {
 		this.precioMes = precioMes;
 	}
 
-	public Double getPuntuacionMedia() {
+	public Float getPuntuacionMedia() {
 		return puntuacionMedia;
 	}
 
-	public void setPuntuacionMedia(Double puntuacionMedia) {
+	public void setPuntuacionMedia(Float puntuacionMedia) {
 		this.puntuacionMedia = puntuacionMedia;
 	}
 
